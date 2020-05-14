@@ -7,4 +7,4 @@ npm初始化
 npm install webpack webpack-cli --save-dev
 ``` 
 安装webpack和webpack-cli(webpack命令行工具) 
-
+添加webpack.config.js文件
