@@ -1,0 +1,26 @@
+{
+  "name": "webpackconfig",
+  "version": "1.0.0",
+  "description": "webpack config template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenxiaoleizi/webpackConfig.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "chenxiaoleizi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chenxiaoleizi/webpackConfig/issues"
+  },
+  "homepage": "https://github.com/chenxiaoleizi/webpackConfig#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
