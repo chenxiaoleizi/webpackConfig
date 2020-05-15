@@ -12,6 +12,14 @@ module.exports = {
         // filename: "[hash].bundle.js"
         path: path.resolve(__dirname, "dist/js")
     },
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"]
+            }
+        ]
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: "./index.html"
