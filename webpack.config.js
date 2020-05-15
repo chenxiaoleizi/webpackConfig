@@ -1,5 +1,6 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin"); // 生成html并插入打包后的js标签
+const { CleanWebpackPlugin } = require("clean-webpack-plugin"); // 删除上次打包的文件
 
 module.exports = {
     mode: "development",
@@ -12,6 +13,9 @@ module.exports = {
         path: path.resolve(__dirname, "dist/js")
     },
     plugins: [
-        new HtmlWebpackPlugin()
+        new HtmlWebpackPlugin({
+            template: "./index.html"
+        }),
+        new CleanWebpackPlugin()
     ]
 }
