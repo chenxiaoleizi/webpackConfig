@@ -29,5 +29,9 @@ module.exports = {
             template: "./index.html"
         }),
         new CleanWebpackPlugin()
-    ]
+    ],
+    devServer: {
+        contentBase: path.join(__dirname, "dist"),
+        port: 8080
+    }
 }
