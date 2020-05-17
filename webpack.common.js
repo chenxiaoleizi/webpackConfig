@@ -19,10 +19,10 @@ module.exports = {
                 test: /\.html$/,
                 use: ["html-loader"]
             },
-            {
-                test: /\.css$/,
-                use: ["style-loader", "css-loader"]
-            },
+            // {
+            //     test: /\.css$/,
+            //     use: ["style-loader", "css-loader"]
+            // },
             {
                 test: /\.jpeg$/,
                 // use: ["file-loader"]
@@ -40,5 +40,10 @@ module.exports = {
             template: "./index.html"
         }),
         new CleanWebpackPlugin()
-    ]
+    ],
+    optimization: {
+        splitChunks: {
+            chunks: "all"
+        }
+    }
 }
