@@ -7,4 +7,5 @@ html,body{
     background: url("./cat.jpeg");
     display: flex;
     align-items: center;
+    border-radius: 4px;
 }
